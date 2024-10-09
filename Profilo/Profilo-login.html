@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>IndiePlayground | Accesso</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1 align="center">IndiePlayground</h1>
+        <li><a href="../Home/Home.html">Home</a></li>
+        
+        <form method="get" action="accesso.php" name="accesso" align="center">
+            <fieldset>
+                <!-- Titolo -->
+                <legend>Accesso utente</legend>
+                
+                <!-- Inserimento del nickname -->
+                <input name="nickname" type="text" placeholder="Nickname" size="22" minlength="5" maxlength="15" required><br><br>
+                
+                <!-- Inserimento dell'email -->
+                <input name="email" type="email" placeholder="E-mail" size="22" required><br><br>
+                
+                <!-- Inserimento della password -->
+                <input name="password" type="text" placeholder="Password" size="22" minlength="8" maxlength="16" required><br><br>
+
+                <!-- Tasti invio e Annulla -->
+                <input value="Invia" name="invia" type="submit"> <input value="Annulla" name="annulla" type="reset">
+            </fieldset>    
+        </form>
+        
+        <p align="center"><a href="../Assistenza/Change-Password.html">Password dimenticata?</a></p>
+        <p align="center">Non hai un account? <a href="Profilo-register.html">Registrati!</a></p>
+    </body>
+</html>
