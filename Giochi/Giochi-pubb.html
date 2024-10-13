@@ -31,7 +31,55 @@
         </ul>
         <h1 id="iniziogiochi">I vostri giochi indie</h1>
         <h2>Scopri tutti i giochi indie creati da voi!</h2>
-        <p>qui va inserito il filtraggio per: | genere | anno | prezzo | ricerca personalizzata 🔍 |</p>
+
+            <form method="get" name="filtraggio" align="center">
+                <label>Filtra per:</label>
+                <!-- Selezione anno di uscita -->
+                <select name="anno">
+                    <option selected="selected" value="Anno">Anno</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                </select>
+
+                <!-- Selezione genere -->
+                <select name="genere">
+                    <option selected="selected" value="Genere">Genere</option>
+                    <option value="indie">Indie</option>
+                    <option value="indie-horror">Indie-Horror</option>
+                </select>
+
+                <!-- Selezione prezzo -->
+                <select name="prezzo">
+                    <option selected="selected" value="Prezzo">Prezzo</option>
+                    <option value="100-150">100-150</option>
+                    <option value="65-100">65-100</option>
+                    <option value="60-65">60-65</option>
+                    <option value="55-60">55-60</option>
+                    <option value="50-55">50-55</option>
+                    <option value="45-50">45-50</option>
+                    <option value="40-45">40-45</option>
+                    <option value="35-40">35-40</option>
+                    <option value="30-35">30-35</option>
+                    <option value="25-30">25-30</option>
+                    <option value="20-25">20-25</option>
+                    <option value="15-20">15-20</option>
+                    <option value="10-15">10-15</option>
+                    <option value="5-10">5-10</option>
+                    <option value="1-5">1-5</option>
+                    <option value="0-1">0-1</option>
+                    <option value="0">0</option>
+                </select>
+
+                <!-- Ricerca personalizzata -->
+                <input name="ricerca" type="text" placeholder="Ricerca 🔍">
+            </form>
+        
         <!-- Reindirizzamento all'iniziale dei videogiochi creati dai piccoli programmatori -->
         <h3>
             <a href="#giochiA">A</a> ▫
