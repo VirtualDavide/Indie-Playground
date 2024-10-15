@@ -6,33 +6,52 @@
         <meta name="keywords" content="IndiePlayground, Indie, Indie games, Videogiochi Indie, Videogiochi, Videogames Indie, Videogames">
         <meta name="description" content="Il tuo checkpoint nel mondo indie: notizie, offerte e spazio per sviluppatori emergenti.">
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="Style-Home.css">
     </head>
     <body>
         <!-- Inizio sito -->
-        <h1 align="center">IndiePlayground</h1>
+        <header>
+            <h1 align="center">IndiePlayground</h1>
         
         <!-- Collegamenti -->
-        <ul><h4 align="right"><a href="../Profilo/Profilo-login.html">Accedi</a> o <a href="../Profilo/Profilo-register.html">Registrati</a></h4>
-            <li><a href="Home.html">Home</a></li>
-            <li>Giochi</li>
-                <ol>
-                    <li><a href="../Giochi/Giochi-pubb.html">Giochi pubblicizzati</a></li>
-                    <li><a href="../Giochi/Giochi-all.html">Tutti gli Indie</a></li>
-                    <li><a href="../Giochi/Giochi-latest.html">Ultime uscite</a></li>
-                </ol>
-            <li><a href="../Offerte/Offerte.html">Offerte</a></li>
-            <li>Guide</li>
-                <ol>
-                    <li><a href="../Guide/Guide-tutorial.html">Tutorial/Guide videogiochi</a></li>
-                    <li><a href="../Guide/Guide-creation.html">Guide alla creazione</a></li>
-                </ol>
-                <li>Forum</li>
-                <ol>
-                    <li><a href="../Forum/Forum-general.html">Generale</a></li>
-                    <li><a href="../Forum/Forum-thematic.html">Tematico</a></li>
-                </ol>
-            <li><a href="../Assistenza/Assistenza.html">Assistenza</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li>
+                    Giochi
+                    <ol class="dropdown">
+                        <li><a href="../Giochi/Giochi-pubb.html">Giochi pubblicizzati</a></li>
+                        <li><a href="../Giochi/Giochi-all.html">Tutti gli Indie</a></li>
+                        <li><a href="../Giochi/Giochi-latest.html">Ultime uscite</a></li>
+                    </ol>
+                </li>
+                <li><a href="../Offerte/Offerte.html">Offerte</a></li>
+                <li>
+                    Guide
+                    <ol class="dropdown">
+                        <li><a href="../Guide/Guide-tutorial.html">Tutorial/Guide videogiochi</a></li>
+                        <li><a href="../Guide/Guide-creation.html">Guide alla creazione</a></li>
+                    </ol>
+                </li>
+                <li>
+                    Forum
+                    <ol class="dropdown">
+                        <li><a href="../Forum/Forum-general.html">Generale</a></li>
+                        <li><a href="../Forum/Forum-thematic.html">Tematico</a></li>
+                    </ol>
+                </li>
+                <li><a href="../Assistenza/Assistenza.html">Assistenza</a></li>
+                <li>
+                    Profilo
+                    <ol class="dropdown">
+                        <li><a href="../Profilo/Profilo-login.html">Accedi</a></li>
+                        <li><a href="../Profilo/Profilo-register.html">Registrati</a></li>
+                    </ol>
+
+                </li>
+            </ul>
+        </nav>
+        </header>
 
         <!-- Latest News -->
         <table border="1" align="right">
@@ -83,7 +102,7 @@
         <!-- Inizio pagina home con news -->
         <h1>Notizia del giorno</h1>
         <h2>Lorem Ipsum</h2>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id urna lobortis augue 
+        <h4>Lorem ipsum dolor sit am<link rel="stylesheet" href="prov.css">et, consectetur adipiscing elit. Aenean id urna lobortis augue 
             vulputate dignissim. Aenean sagittis egestas lectus a consectetur.<br>Suspendisse ultrices 
             enim felis, quis elementum lorem commodo eget. Donec fermentum nisl in faucibus congue. 
             In vel nulla nec magna suscipit eleifend.<br>Suspendisse vel volutpat ex. Suspendisse elementum 
@@ -134,8 +153,17 @@
          <a href="https://facebook.com"><img src="../Immagini/Social/facebook.png" alt="Facebook" widht="30" height="30"></a>
 
         <!-- End credits -->
-         <!-- Privacy Policy - Term of Use - Contacts - Location - Copyright -->
-        <br><font size="1"><a href="../Assistenza/Privacy-Policy.html">Privacy Policy</a> | <a href="../Assistenza/Term-of-use.html">Term of use</a>
-        <br>Contattaci: <a href="mailto:example@example.com">example@example.com</a> | Num: 371 457 0552<br>Via example N | Benevento 82100 | Italia<br>© 2024-20** IndiePlayground | Vivariumware</font>
+         
+         <!-- Privacy Policy - Term of Use -->
+         <br><font size="1"><a href="../Assistenza/Privacy-Policy.html">Privacy Policy</a> | <a href="../Assistenza/Term-of-use.html">Term of use</a>
+        
+         <!-- Contacts -->
+         <br>Contattaci: <a href="mailto:example@example.com">example@example.com</a> | Num: <a href="tel:+393714570552">371 457 0552</a>
+        
+         <!-- Location -->
+         <br><a href="https://maps.app.goo.gl/EC1pkaRgHUACVeds9">Viale San Lorenzo 2</a> | <a href="https://maps.app.goo.gl/7hoe2AH7xXwrUAWu5">Benevento 82100</a> | <a href="https://maps.app.goo.gl/mpJ3f1zbN8qWVzcYA">Italia</a>
+        
+         <!-- Copyright -->
+         <br>© 2024 IndiePlayground | Vivariumware</font>
     </body>
 </html>

@@ -1,0 +1,94 @@
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: right;
+    font-family: Verdana, sans-serif;
+}
+
+.auth-links {
+    margin-bottom: 10px; /* Spazio sotto la sezione di accesso/registrazione */
+}
+
+nav {
+    background-color: #333; /* Colore di sfondo del menù */
+    padding: 20px 0; /* Spazio sopra e sotto il menù */
+}
+
+nav ul {
+    display: flex; /* Gli elementi della lista sono in una riga */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Centra gli elementi del menù */
+}
+
+nav ul li {
+    position: relative; /* Necessario per il dropdown */
+    margin-right: 40px; /* Spazio tra gli elementi */
+}
+
+nav ul li a {
+    color: white; /* Colore del testo */
+    padding: 20px 20px; /* Spazio interno */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    border-radius: 10px; /* Angoli arrotondati */
+    transition: background-color 0.3s, color 0.5s; /* Effetto di transizione */
+}
+
+/*
+nav ul li a:hover {
+    background-color: #6d6d6d; /* Colore di sfondo al passaggio del mouse 
+    color: #fff; /* Colore del testo al passaggio del mouse 
+}
+
+/* Aggiungi un bordo alle voci del menù con dropdown al passaggio del mouse 
+nav ul li:hover > a {
+    border: 2px solid #6d6d6d; /* Bordo al passaggio del mouse 
+}
+*/
+
+.dropdown {
+    opacity: 0; /* Imposta l'opacità a 0 */
+    transform: translate(-50%, -10px); /* Sposta il dropdown verso l'alto e al centro */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transizioni per opacità e trasformazione */
+    position: absolute; /* Posizionamento assoluto */
+    left: 50%; /* Posiziona il dropdown al centro */
+    background-color: #4e4e4e; /* Colore di sfondo del dropdown */
+    border: 3px solid #6d6d6d; /* Bordo */
+    border-radius: 5px; /* Angoli arrotondati */
+    padding: 20px -5px; /* Spazio interno */
+    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.2); /* Ombra più profonda */
+    z-index: 1000; /* Assicura che sia sopra gli altri elementi */
+}
+
+.dropdown li {
+    display: block; /* Elementi del dropdown uno sotto l'altro */
+    text-align: center; /* Allinea il testo al centro */
+}
+
+.dropdown li a {
+    color: white; /* Colore del testo nel dropdown */
+    padding: 1px 0; /* Spazio interno ridotto per i link del dropdown */
+    white-space: nowrap; /* Impedisce la rottura delle righe */
+    transition: background-color 0.3s; /* Effetto di transizione */
+}
+
+.dropdown li a:hover {
+    background-color: #6d6d6d; /* Colore di sfondo al passaggio del mouse nel dropdown */
+    color: white; /* Colore del testo al passaggio del mouse nel dropdown */
+}
+
+li:hover .dropdown {
+    opacity: 1; /* Imposta l'opacità a 1 al passaggio del mouse */
+    transform: translate(-50%, 0); /* Riporta il dropdown nella sua posizione originale */
+}
+
+nav ul li a:focus {
+    outline: none; /* Rimuove il contorno di focus */
+}
+
+/* Aggiungi questo stile per centrare il testo nel dropdown */
+.dropdown {
+    text-align: center; /* Allinea tutto il testo nel dropdown al centro */
+}
