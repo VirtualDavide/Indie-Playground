@@ -1,8 +1,6 @@
-/* prov.css */
-
 /* Stili generali */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -14,6 +12,72 @@ h1, h2, h4 {
     color: #2c3e50;
 }
 
+@font-face {
+    font-family: 'Trends';
+    src: url('../Risorse/Font/trends/Trends.ttf') format('truetype'); /* Per browser moderni */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Heavitas';
+    src: url('../Risorse/Font/heavitas/Heavitas.ttf') format('truetype'); /* Per browser moderni */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Stile per la barra superiore */
+.top-bar {
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    align-items: center;
+    border-bottom: 1px solid #ccc; /* Linea di separazione */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra sotto la linea */
+    font-weight: bold;
+}
+
+.top-bar .contacts a {
+    margin: 0 10px;
+}
+
+.top-bar .contacts img {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+
+.top-bar .socials a {
+    margin: 0 10px;
+}
+
+.top-bar .socials img {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+
+.top-bar .modes a {
+    margin: 20px; 
+}
+
+.top-bar .modes img {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+
+/* Media query per schermi più piccoli */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 /* Header styles */
 .header {
     display: flex;
@@ -22,10 +86,18 @@ h1, h2, h4 {
     padding: 20px;
     background-color: #ffffff; /* Cambia il colore di sfondo se necessario */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra dietro l'header */
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .header h1 {
     margin: 0;
+    font-family: 'Heavitas';
+}
+
+.header a {
+    text-decoration: none;
+    color: #000000; /* Colore del testo in nero */
+    font-weight: bold;
 }
 
 /* Menu styles */
@@ -37,18 +109,17 @@ h1, h2, h4 {
     margin-left: auto; /* Spinge il menu a destra */
     font-weight: bold;
     color: #000; /* Colore del testo in nero */
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .nav li {
     position: relative; /* Necessario per il dropdown */
     margin-left: 20px; /* Margine tra le voci del menu */
-
 }
 
 .nav a {
     text-decoration: none;
-    color: #000; /* Colore del testo in nero */
+    color: #000000; /* Colore del testo in nero */
     font-weight: bold;
 }
 
@@ -60,9 +131,12 @@ h1, h2, h4 {
 .dropdown {
     display: none;
     position: absolute;
+    left: 50%; /* Posizionamento iniziale al 50% rispetto alla voce principale */
+    transform: translateX(-50%); /* Sposta indietro di metà della sua larghezza per centrarlo */
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1;
+    border-radius: 10px;
 }
 
 .nav li:hover .dropdown {
@@ -77,6 +151,7 @@ h1, h2, h4 {
 .dropdown li a {
     padding: 10px 10px;
     display: block;
+    text-align: left;
 }
 
 /* News container */
@@ -84,7 +159,8 @@ h1, h2, h4 {
     display: flex;
     justify-content: space-between;
     margin: 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Ombra dietro l'header */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); /* Ombra dietro l'header */
+    border-radius: 10px;
 }
 
 .daily-news {
@@ -134,27 +210,12 @@ img {
     height: auto;
 }
 
-/* Sezione di contatto */
-footer {
-    text-align: center;
-    font-size: 0.8em;
-    padding: 20px 0;
-    background-color: #2c3e50;
-    color: white;
-}
-
-/* Social media */
-.socials a {
-    margin: 0 10px;
-    display: inline-block;
-}
-
-.socials img {
-    vertical-align: middle;
-}
-
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 768px) {.top-bar .socials img {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
     .nav {
         flex-direction: column; /* Disposizione verticale per schermi piccoli */
         align-items: flex-start; /* Allinea a sinistra */
@@ -171,4 +232,16 @@ footer {
     .daily-news {
         margin-right: 0; /* Rimuovi il margine a destra */
     }
+}
+
+.end-credits {
+    display: relative;
+    justify-content: space-between; /* Spazia gli elementi tra di loro */
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* Cambia il colore di sfondo se necessario */
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2); /* Ombra verso l'alto */
+    font-weight: bold;
+    color: #000; /* Colore del testo in nero */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
