@@ -1,115 +1,101 @@
 /* Stili generali */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Arial', sans-serif; /* Font generale */
+    margin: 0; /* Rimuove margini predefiniti */
+    padding: 0; /* Rimuove padding predefiniti */
+    background-color: #f4f4f4; /* Colore di sfondo della pagina */
+    color: #333; /* Colore del testo */
 }
 
 h1, h2, h4 {
-    text-align: center;
-    color: #2c3e50;
+    text-align: center; /* Allinea i titoli al centro */
+    color: #2c3e50; /* Colore dei titoli */
 }
 
+/* Definizione dei font personalizzati */
 @font-face {
     font-family: 'Trends';
-    src: url('../Risorse/Font/trends/Trends.ttf') format('truetype'); /* Per browser moderni */
-    font-weight: normal;
-    font-style: normal;
+    src: url('../Risorse/Font/trends/Trends.ttf') format('truetype'); /* Font per browser moderni */
+    font-weight: normal; /* Peso normale del font */
+    font-style: normal; /* Stile normale del font */
 }
 
 @font-face {
     font-family: 'Heavitas';
-    src: url('../Risorse/Font/heavitas/Heavitas.ttf') format('truetype'); /* Per browser moderni */
-    font-weight: normal;
-    font-style: normal;
+    src: url('../Risorse/Font/heavitas/Heavitas.ttf') format('truetype'); /* Font per browser moderni */
+    font-weight: normal; /* Peso normale del font */
+    font-style: normal; /* Stile normale del font */
 }
 
 /* Stile per la barra superiore */
 .top-bar {
-    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-    color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-    font-size: 0.9em;
-    align-items: center;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); /* Gradiente di sfondo */
+    color: rgb(0, 0, 0); /* Colore del testo */
+    display: flex; /* Usa flexbox per la disposizione */
+    justify-content: space-between; /* Spazia gli elementi tra di loro */
+    padding: 10px 20px; /* Padding interno */
+    font-size: 0.9em; /* Dimensione del font */
+    align-items: center; /* Allinea verticalmente gli elementi */
     border-bottom: 1px solid #ccc; /* Linea di separazione */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra sotto la linea */
-    font-weight: bold;
+    font-weight: bold; /* Testo in grassetto */
 }
 
-.top-bar .contacts a {
-    margin: 0 10px;
-}
-
-.top-bar .contacts img {
-    vertical-align: middle;
-    width: 20px;
-    height: 20px;
-}
-
-.top-bar .socials a {
-    margin: 0 10px;
-}
-
-.top-bar .socials img {
-    vertical-align: middle;
-    width: 20px;
-    height: 20px;
-}
-
+/* Stile per i link e le immagini nella barra superiore */
+.top-bar .contacts a,
+.top-bar .socials a,
 .top-bar .modes a {
-    margin: 20px; 
+    margin: 0 10px; /* Margine laterale */
 }
 
+.top-bar .contacts img,
+.top-bar .socials img,
 .top-bar .modes img {
-    vertical-align: middle;
-    width: 20px;
-    height: 20px;
+    vertical-align: middle; /* Allineamento verticale delle immagini */
+    width: 20px; /* Larghezza delle immagini */
+    height: 20px; /* Altezza delle immagini */
 }
 
 /* Media query per schermi più piccoli */
 @media (max-width: 768px) {
     .top-bar {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* Disposizione verticale per schermi piccoli */
+        text-align: center; /* Allinea il testo al centro */
     }
 }
 
-/* Header styles */
+/* Stile per l'intestazione */
 .header {
-    display: flex;
+    display: flex; /* Usa flexbox per la disposizione */
     justify-content: space-between; /* Spazia gli elementi tra di loro */
     align-items: center; /* Allinea verticalmente gli elementi */
-    padding: 20px;
-    background-color: #ffffff; /* Cambia il colore di sfondo se necessario */
+    padding: 20px; /* Padding interno */
+    background-color: #ffffff; /* Colore di sfondo */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra dietro l'header */
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); /* Gradiente di sfondo */
 }
 
 .header h1 {
-    margin: 0;
-    font-family: 'Heavitas';
+    margin: 0; /* Rimuove margine per il titolo */
+    font-family: 'Heavitas'; /* Font personalizzato per il titolo */
 }
 
 .header a {
-    text-decoration: none;
+    text-decoration: none; /* Rimuove la sottolineatura dai link */
     color: #000000; /* Colore del testo in nero */
-    font-weight: bold;
+    font-weight: bold; /* Testo in grassetto */
 }
 
-/* Menu styles */
+/* Stile per il menu di navigazione */
 .nav {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Usa flexbox per il menu */
+    list-style-type: none; /* Rimuove i pallini della lista */
+    padding: 0; /* Rimuove padding */
+    margin: 0; /* Rimuove margini */
+    display: flex; /* Usa flexbox per la disposizione */
     margin-left: auto; /* Spinge il menu a destra */
-    font-weight: bold;
+    font-weight: bold; /* Testo in grassetto */
     color: #000; /* Colore del testo in nero */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font del menu */
 }
 
 .nav li {
@@ -117,64 +103,83 @@ h1, h2, h4 {
     margin-left: 20px; /* Margine tra le voci del menu */
 }
 
+/* Stile per i link del menu */
 .nav a {
-    text-decoration: none;
+    text-decoration: none; /* Rimuove la sottolineatura dai link */
     color: #000000; /* Colore del testo in nero */
-    font-weight: bold;
+    font-weight: bold; /* Testo in grassetto */
+    position: relative; /* Necessario per il posizionamento del pseudo-elemento */
 }
 
-.nav a:hover {
-    text-decoration: underline; /* Sottolineatura al passaggio del mouse */
+/* Pseudo-elemento per l'animazione della sottolineatura dei titoli */
+.nav a::after { 
+    content: ""; /* Pseudo-elemento vuoto */
+    position: absolute; /* Posizionamento assoluto rispetto al padre */
+    left: 50%; /* Inizia dal centro */
+    bottom: 0; /* Posizionamento alla base del testo */
+    width: 100%; /* Larghezza uguale a quella del link */
+    height: 2px; /* Spessore della sottolineatura */
+    background: #000; /* Colore della sottolineatura */
+    transform: translateX(-50%) scaleX(0); /* Inizia nascosto (scala zero) e centrato */
+    transform-origin: center; /* Origine della trasformazione al centro */
+    transition: transform 0.3s ease; /* Transizione per l'animazione */
+}
+
+/* Animazione della sottolineatura al passaggio del mouse nei crediti finali */
+.nav a:hover::after {
+    transform: translateX(-50%) scaleX(1); /* Espandi la sottolineatura a piena larghezza */
 }
 
 /* Dropdown menu */
 .dropdown {
-    display: none;
-    position: absolute;
-    left: 50%; /* Posizionamento iniziale al 50% rispetto alla voce principale */
-    transform: translateX(-50%); /* Sposta indietro di metà della sua larghezza per centrarlo */
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-    border-radius: 10px;
+    display: none; /* Nasconde il menu a discesa */
+    position: absolute; /* Posizionamento assoluto */
+    left: 50%; /* Posizionamento al centro */
+    transform: translateX(-50%); /* Centra il dropdown */
+    background-color: #fff; /* Colore di sfondo del dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra del dropdown */
+    z-index: 1; /* Assicura che il dropdown sia sopra gli altri elementi */
+    border-radius: 10px; /* Angoli arrotondati del dropdown */
 }
 
+/* Mostra il dropdown al passaggio del mouse sulla voce di menu */
 .nav li:hover .dropdown {
-    display: block;
+    display: block; /* Mostra il dropdown */
 }
 
 .dropdown li {
-    display: block;
-    margin: 0;
+    display: block; /* Ogni voce del dropdown occupa una nuova riga */
+    margin: 0; /* Rimuove margine per le voci del dropdown */
 }
 
 .dropdown li a {
-    padding: 10px 10px;
-    display: block;
-    text-align: left;
+    padding: 10px 10px; /* Padding per le voci del dropdown */
+    display: block; /* Ogni voce occupa l'intera larghezza */
+    text-align: left; /* Allinea il testo a sinistra */
 }
 
-/* News container */
+/* Stile per il contenitore delle notizie */
 .news-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); /* Ombra dietro l'header */
-    border-radius: 10px;
+    display: flex; /* Usa flexbox per la disposizione */
+    justify-content: space-between; /* Spazia gli elementi tra di loro */
+    margin: 20px; /* Margine attorno al contenitore */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); /* Ombra dietro il contenitore */
+    border-radius: 10px; /* Angoli arrotondati */
 }
 
 .daily-news {
-    flex: 5; /* Occupare 2/3 dello spazio */
-    margin-right: 20px;
+    flex: 5; /* Occupa 2/3 dello spazio */
+    margin-right: 20px; /* Margine a destra */
 }
 
 .latest-news {
-    flex: 1; /* Occupare 1/3 dello spazio */
+    flex: 1; /* Occupa 1/3 dello spazio */
     background-color: #ffffff; /* Colore di sfondo per il riquadro delle ultime notizie */
     padding: 10px; /* Padding per il contenitore */
     border-radius: 10px; /* Angoli arrotondati */
 }
 
+/* Stile per ogni voce di notizia */
 .news-item {
     background-color: #f9f9f9; /* Colore di sfondo per ogni notizia */
     border: 1px solid #ddd; /* Bordo per delineare le notizie */
@@ -193,29 +198,31 @@ h1, h2, h4 {
 
 /* Tabelle */
 table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 25px 10px;
+    border-collapse: collapse; /* Unisce i bordi delle celle */
+    width: 100%; /* Larghezza della tabella */
+    margin: 25px 10px; /* Margine attorno alla tabella */
 }
 
 th, td {
     padding: 5px; /* Ridotto padding per rendere la tabella più secca */
-    text-align: center;
+    text-align: center; /* Allinea il testo al centro */
     border: none; /* Rimuovere i bordi */
 }
 
-/* Immagini */
+/* Stile per le immagini */
 img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Limita la larghezza delle immagini */
+    height: auto; /* Mantiene le proporzioni delle immagini */
 }
 
-/* Media Queries */
-@media (max-width: 768px) {.top-bar .socials img {
-    vertical-align: middle;
-    width: 20px;
-    height: 20px;
-}
+/* Media Queries per dispositivi mobili */
+@media (max-width: 768px) {
+    .top-bar .socials img {
+        vertical-align: middle; /* Allineamento verticale delle immagini */
+        width: 20px; /* Larghezza delle immagini */
+        height: 20px; /* Altezza delle immagini */
+    }
+    
     .nav {
         flex-direction: column; /* Disposizione verticale per schermi piccoli */
         align-items: flex-start; /* Allinea a sinistra */
@@ -234,14 +241,40 @@ img {
     }
 }
 
+/* Stile per i crediti finali */
 .end-credits {
-    display: relative;
+    display: relative; /* Disposizione relativa */
     justify-content: space-between; /* Spazia gli elementi tra di loro */
-    text-align: center;
-    padding: 20px;
-    background-color: #ffffff; /* Cambia il colore di sfondo se necessario */
+    text-align: center; /* Allinea il testo al centro */
+    padding: 10px; /* Padding interno */
+    background-color: #ffffff; /* Colore di sfondo */
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2); /* Ombra verso l'alto */
-    font-weight: bold;
-    color: #000; /* Colore del testo in nero */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font per i crediti finali */
+}
+
+/* Stile per i link nei crediti finali */
+.end-credits a {
+    text-decoration: none; /* Rimuove la sottolineatura dai link */
+    color: #000000; /* Colore del testo in nero */
+    font-weight: bold; /* Testo in grassetto */
+    position: relative; /* Necessario per il posizionamento del pseudo-elemento */
+}
+
+/* Pseudo-elemento per l'animazione della sottolineatura nei crediti finali */
+.end-credits a::after { 
+    content: ""; /* Pseudo-elemento vuoto */
+    position: absolute; /* Posizionamento assoluto rispetto al padre */
+    left: 50%; /* Inizia dal centro */
+    bottom: 0; /* Posizionamento alla base del testo */
+    width: 100%; /* Larghezza uguale a quella del link */
+    height: 2px; /* Spessore della sottolineatura */
+    background: #000; /* Colore della sottolineatura */
+    transform: translateX(-50%) scaleX(0); /* Inizia nascosto (scala zero) e centrato */
+    transform-origin: center; /* Origine della trasformazione al centro */
+    transition: transform 0.3s ease; /* Transizione per l'animazione */
+}
+
+/* Animazione della sottolineatura al passaggio del mouse nei crediti finali */
+.end-credits a:hover::after {
+    transform: translateX(-50%) scaleX(1); /* Espandi la sottolineatura a piena larghezza */
 }
