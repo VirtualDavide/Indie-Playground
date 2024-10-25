@@ -12,6 +12,8 @@ h1, h2, h4 {
     color: #2c3e50; /* Colore dei titoli */
 }
 
+
+
 /* Definizione dei font personalizzati */
 @font-face {
     font-family: 'Trends';
@@ -78,6 +80,7 @@ h1, h2, h4 {
 .header h1 {
     margin: 0; /* Rimuove margine per il titolo */
     font-family: 'Heavitas'; /* Font personalizzato per il titolo */
+    height: 25px;
 }
 
 .header a {
