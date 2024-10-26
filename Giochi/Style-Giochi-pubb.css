@@ -1,0 +1,110 @@
+/* Stili generali */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h4 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Definizione dei font personalizzati */
+@font-face {
+    font-family: 'Trends';
+    src: url('../Risorse/Font/trends/Trends.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Heavitas';
+    src: url('../Risorse/Font/heavitas/Heavitas.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Stile per i titoli centrati */
+.pagina-generale h1,
+.pagina-generale h2 {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+
+.pagina-generale h1 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+.pagina-generale h2 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Stile per il contenitore dei giochi */
+.giochi-pubblicizzati {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.pagina-generale {
+    flex: 10;
+    margin-right: 20px;
+}
+
+/* Stili per i "rettangoli" delle sezioni alfabetiche */
+.letter-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+
+.letter-box {
+    display: inline-block;
+    width: 1475px;
+    height: 100px;
+    background-color: #dfdfdf;
+    color: #2c3e50;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 5px;
+    position: relative; /* Permette il posizionamento assoluto dell'elemento figlio */
+}
+
+.letter-content {
+    
+    position: absolute;
+    top: 5px; /* Posiziona in alto */
+    left: 10px; /* Posiziona a sinistra */
+    width: 1455px;
+    height: 30px;
+    background-color: #c5c5c5; /* Sfondo più scuro per distinguere */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    font-size: 18px; /* Riduce la dimensione del testo */
+}
+
+/* Stile per i titoli delle sezioni */
+.letter-title {
+    font-size: 24px;
+    color: #333;
+    font-family: 'Heavitas', sans-serif;
+}

@@ -1,0 +1,37 @@
+/* Stile per i crediti finali */
+.end-credits {
+    display: relative; /* Disposizione relativa */
+    justify-content: space-between; /* Spazia gli elementi tra di loro */
+    text-align: center; /* Allinea il testo al centro */
+    padding: 10px; /* Padding interno */
+    background-color: #ffffff; /* Colore di sfondo */
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2); /* Ombra verso l'alto */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font per i crediti finali */
+}
+
+/* Stile per i link nei crediti finali */
+.end-credits a {
+    text-decoration: none; /* Rimuove la sottolineatura dai link */
+    color: #000000; /* Colore del testo in nero */
+    font-weight: bold; /* Testo in grassetto */
+    position: relative; /* Necessario per il posizionamento del pseudo-elemento */
+}
+
+/* Pseudo-elemento per l'animazione della sottolineatura nei crediti finali */
+.end-credits a::after { 
+    content: ""; /* Pseudo-elemento vuoto */
+    position: absolute; /* Posizionamento assoluto rispetto al padre */
+    left: 50%; /* Inizia dal centro */
+    bottom: 0; /* Posizionamento alla base del testo */
+    width: 100%; /* Larghezza uguale a quella del link */
+    height: 2px; /* Spessore della sottolineatura */
+    background: #000; /* Colore della sottolineatura */
+    transform: translateX(-50%) scaleX(0); /* Inizia nascosto (scala zero) e centrato */
+    transform-origin: center; /* Origine della trasformazione al centro */
+    transition: transform 0.3s ease; /* Transizione per l'animazione */
+}
+
+/* Animazione della sottolineatura al passaggio del mouse nei crediti finali */
+.end-credits a:hover::after {
+    transform: translateX(-50%) scaleX(1); /* Espandi la sottolineatura a piena larghezza */
+}
