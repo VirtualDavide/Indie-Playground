@@ -1,0 +1,51 @@
+.carousel-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Ombra dietro il carosello */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* Pulsanti di navigazione del carosello */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    padding: 0; /* Rimuovere il padding per un pulsante più piccolo */
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 50%; /* Forma rotonda */
+    width: 40px; /* Larghezza */
+    height: 40px; /* Altezza */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Colore al passaggio del mouse */
+}
+
+.carousel-button.prev {
+    left: 10px; /* Posizione del pulsante precedente */
+}
+
+.carousel-button.next {
+    right: 10px; /* Posizione del pulsante successivo */
+}

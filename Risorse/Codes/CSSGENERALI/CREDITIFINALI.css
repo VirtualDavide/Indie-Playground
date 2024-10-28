@@ -1,12 +1,12 @@
 /* Stile per i crediti finali */
 .end-credits {
-    display: relative; /* Disposizione relativa */
-    justify-content: space-between; /* Spazia gli elementi tra di loro */
+    position: relative; /* Posizionamento relativo */
     text-align: center; /* Allinea il testo al centro */
     padding: 10px; /* Padding interno */
     background-color: #ffffff; /* Colore di sfondo */
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2); /* Ombra verso l'alto */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font per i crediti finali */
+    width: 100%;
 }
 
 /* Stile per i link nei crediti finali */

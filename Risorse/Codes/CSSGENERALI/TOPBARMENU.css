@@ -75,6 +75,7 @@
     position: relative; /* Necessario per il dropdown */
     margin-left: 20px; /* Margine tra le voci del menu */
     text-align: center; /* Allinea il testo al centro */
+    padding: 0; /* Assicurati che non ci sia padding */
 }
 
 /* Stile per i link del menu */
@@ -112,13 +113,13 @@
 .dropdown {
     display: none; /* Nasconde il menu a discesa */
     position: absolute; /* Posizionamento assoluto */
-    left: 50%; /* Posizionamento al centro */
-    transform: translateX(-80%); /* Centra il dropdown */
+    left: 50%; /* Posizionamento al centro rispetto al padre */
+    transform: translateX(-50%); /* Centra orizzontalmente il dropdown */
     background-color: #fff; /* Colore di sfondo del dropdown */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra del dropdown */
     z-index: 1; /* Assicura che il dropdown sia sopra gli altri elementi */
     border-radius: 10px; /* Angoli arrotondati del dropdown */
-    min-width: 150px; /* Larghezza minima del dropdown */
+    min-width: 200px; /* Larghezza minima del dropdown */
 }
 
 /* Mostra il dropdown al passaggio del mouse sulla voce di menu */
@@ -132,13 +133,52 @@
 }
 
 .dropdown li a {
-    padding: 5px 0; /* Padding per le voci del dropdown */
+    padding: 10px 0; /* Aumenta il padding verticale per dare più spazio */
     display: flex; /* Usa flexbox per centrare il contenuto */
-    justify-content: left; /* Centra orizzontalmente */
-    align-items: left; /* Centra verticalmente */
-    text-align: left; /* Allinea il testo al centro */
+    justify-content: center; /* Centra orizzontalmente il contenuto */
+    align-items: center; /* Centra verticalmente il contenuto */
+    width: 100%; /* Assicura che il link occupi tutta la larghezza */
+    text-align: center; /* Allinea il testo al centro */
 }
 
 .dropdown a:hover::after {
     transform: translateX(-65%) scaleX(1); /* Espandi la sottolineatura a piena larghezza */
+}
+
+
+
+/* Media Queries per dispositivi mobili */
+@media (max-width: 768px) {
+    .top-bar .socials img {
+        vertical-align: middle; /* Allineamento verticale delle immagini */
+        width: 20px; /* Larghezza delle immagini */
+        height: 20px; /* Altezza delle immagini */
+    }
+    
+    .nav {
+        flex-direction: column; /* Disposizione verticale per schermi piccoli */
+        align-items: flex-start; /* Allinea a sinistra */
+    }
+
+    .nav li {
+        margin: 5px 0; /* Margine tra le voci del menu */
+    }
+}
+
+/* Media Queries per dispositivi 2K e superiori */
+@media (min-width: 1920px) {
+    .top-bar .socials img {
+        vertical-align: middle; /* Allineamento verticale delle immagini */
+        width: 20px; /* Aumenta la larghezza delle immagini */
+        height: 20px; /* Aumenta l'altezza delle immagini */
+    }
+    
+    .nav {
+        flex-direction: row; /* Disposizione orizzontale per schermi ampi */
+        align-items: center; /* Allinea al centro */
+    }
+
+    .nav li {
+        margin: 0 15px; /* Maggiore margine laterale tra le voci del menu */
+    }
 }
