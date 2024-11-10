@@ -1,0 +1,144 @@
+/* Definizione dei font personalizzati */
+@font-face {
+    font-family: 'Trends';
+    src: url('../Risorse/Font/trends/Trends.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Heavitas';
+    src: url('../Risorse/Font/heavitas/Heavitas.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Stili generali */
+body {
+    font-family: 'Arial', sans-serif; /* Font generale */
+    margin: 0; /* Rimuove margini predefiniti */
+    padding: 0; /* Rimuove padding predefiniti */
+    background-color: #f4f4f4; /* Colore di sfondo della pagina */
+    color: #333; /* Colore del testo */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h4 {
+    text-align: center; /* Allinea i titoli al centro */
+    color: #2c3e50; /* Colore dei titoli */
+}
+
+/* Stile per i titoli centrati */
+.pagina-generale h1,
+.pagina-generale h2 {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+
+.pagina-generale h1 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+.pagina-generale h2 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Stile per i reindirizzamenti alle lettere iniziali */
+.letters-redirection a {
+    text-decoration: none; /* Rimuove la sottolineatura dai link */
+    margin-left: 5px;
+    justify-content: space-between;
+    color: black;
+    font-weight: bold; /* Testo in grassetto */
+    font-size: 20px;
+    position: relative; /* Necessario per il dropdown */
+}
+
+.letters-redirection a::after { 
+    content: ""; /* Pseudo-elemento vuoto */
+    position: absolute; /* Posizionamento assoluto rispetto al padre */
+    left: 50%; /* Inizia dal centro */
+    bottom: 0; /* Posizionamento alla base del testo */
+    width: 100%; /* Larghezza uguale a quella del link */
+    height: 2px; /* Spessore della sottolineatura */
+    background: #000; /* Colore della sottolineatura */
+    transform: translateX(-50%) scaleX(0); /* Inizia nascosto (scala zero) e centrato */
+    transform-origin: center; /* Origine della trasformazione al centro */
+    transition: transform 0.3s ease; /* Transizione per l'animazione */
+}
+
+.letters-redirection a:hover::after {
+    transform: translateX(-50%) scaleX(1); /* Espandi la sottolineatura a piena larghezza */
+}
+
+/* Stile per il contenitore dei giochi */
+.giochi-all {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.pagina-generale {
+    flex: 5;
+    margin-right: 20px;
+}
+
+.barra-laterale {
+    flex: 1; /* Occupa 1/3 dello spazio */
+    background-color: #ffffff; /* Colore di sfondo per il riquadro delle ultime notizie */
+    padding: 10px; /* Padding per il contenitore */
+    border-radius: 10px; /* Angoli arrotondati */
+}
+
+/* Stili per i "rettangoli" delle sezioni alfabetiche */
+.letter-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+
+.letter-box {
+    display: inline-block;
+    width: 1525px;
+    height: 100px;
+    background-color: #e6e6e6;
+    color: #2c3e50;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 5px;
+    position: relative; /* Permette il posizionamento assoluto dell'elemento figlio */
+}
+
+.letter-content {
+    position: absolute;
+    top: 5px; /* Posiziona in alto */
+    left: 10px; /* Posiziona a sinistra */
+    width: 1500px;
+    height: 30px;
+    background-color: #c5c5c5; /* Sfondo più scuro per distinguere */
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    font-size: 18px; /* Riduce la dimensione del testo */
+}
+
+* {
+    box-sizing: border-box;
+}

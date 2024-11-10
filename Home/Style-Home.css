@@ -68,6 +68,15 @@ h1, h2, h4 {
     margin: 0; /* Rimuovere margine per il paragrafo */
 }
 
+/* Stile pubblicità */
+.adv {
+    background-color: #f9f9f9; /* Colore di sfondo per ogni notizia */
+    border: 1px solid #ddd; /* Bordo per delineare le notizie */
+    border-radius: 5px; /* Angoli arrotondati per i quadrati */
+    padding: 10px; /* Padding interno */
+    margin-bottom: 10px; /* Spazio tra le notizie */
+}
+
 /* Tabelle */
 table {
     border-collapse: collapse; /* Unisce i bordi delle celle */
@@ -89,35 +98,4 @@ img {
 
 * {
     box-sizing: border-box;
-}
-
-/* Media Queries per dispositivi mobili */
-@media (max-width: 768px) {
-    .news-container {
-        flex-direction: column; /* Modifica la disposizione in colonna su schermi piccoli */
-    }
-
-    .daily-news {
-        margin-right: 0; /* Rimuovi il margine a destra */
-    }
-}
-
-/* Media Queries per dispositivi 2K e superiori */
-@media (min-width: 1920px) {
-    .news-container {
-        flex-direction: row; /* Modifica la disposizione in riga su schermi grandi */
-        gap: 20px; /* Spazio tra le notizie */
-    }
-
-    .daily-news {
-        margin-left: 20px;
-        margin-right: 20px; /* Aggiungi margine a destra */
-        font-size: 1rem; /* Aumenta leggermente la dimensione del testo */
-    }
-
-    .content-wrapper {
-        max-width: 1600px; /* Limita la larghezza massima della pagina */
-        margin: 0 auto; /* Centra la pagina su schermi larghi */
-        flex-grow: 1;
-    }
 }

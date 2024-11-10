@@ -1,282 +1,417 @@
 <!DOCTYPE html>
 <html lang="it">
     <head>
-        <title>IndiePlayground | Tutti gli Indie</title>
+        <title>IndiePlayground | Tutti i giochi</title>
         <meta charset="UTF-8">
+
+        <!-- Link ai file css della pagina -->
+        <link rel="stylesheet" href="Style-Giochi-all.css"> <!-- Codice css della pagina giochi pubblicizzati -->
+        <link rel="stylesheet" href="../Risorse/Codes/CSSGENERALI/TOPBARMENU.css"> <!-- Codice css del menù a tendina -->
+        <link rel="stylesheet" href="../Risorse/Codes/CSSGENERALI/CREDITIFINALI.css"> <!-- Codice css dei crediti finali -->
+        <link rel="stylesheet" href="../Risorse/Codes/CSSGENERALI/CAROSELLOIMMAGINI.css"> <!-- Codice css del carosello immagini -->
     </head>
     <body>
-        <h1 align="center">IndiePlayground</h1>
-        <h4 align="right"><a href="../Profilo/Profilo.html">Profilo</a></h4>
-        <ul>
-            <li><a href="../Home/Home.html">Home</a></li>
-            <li>Giochi</li>
-                <ol>
-                    <li><a href="Giochi-pubb.html">Giochi pubblicizzati</a></li>
-                    <li><a href="Giochi-all.html">Tutti gli Indie</a></li>
-                    <li><a href="Giochi-latest.html">Ultime uscite</a></li>
-                </ol>
-            <li><a href="../Offerte/Offerte.html">Offerte</a></li>
-            <li>Guide</li>
-                <ol>
-                    <li><a href="../Guide/Guide-tutorial.html">Tutorial/Guide videogiochi</a></li>
-                    <li><a href="../Guide/Guide-creation.html">Guide alla creazione</a></li>
-                </ol>
-            <li>Forum</li>
-                <ol>
-                    <li><a href="../Forum/Forum-general.html">Generale</a></li>
-                    <li><a href="../Forum/Forum-thematic.html">Tematico</a></li>
-                </ol>
-            <li><a href="../Assistenza/Assistenza.html">Assistenza</a></li>
-        </ul>
-        <h1 id="iniziogiochi">Tutti i giochi indie</h1>
-        <h2>Scopri tutti i giochi indie più famosi!</h2>
+        <!-- Barra superiore con contatti e social -->
+        <div class="top-bar">
+            <!-- Contatti -->
+            <div class="contacts">
+                <!-- Email -->
+                <a href="mailto:example@example.com" img><img src="../Risorse/Immagini/Utility/Mail/mail.svg" alt="Email: immettere" width="20" height="20"></a>
+                <!-- Telefono -->
+                <a href="tel:+393714570552"><img src="../Risorse/Immagini/Utility/phone.svg" alt="Telefono: + 39371 457 0552" width="20" height="20"></a>
+            
+                <!-- Dark/Light Mode -->
+                <a href="Home-Dark.html"><img src="../Risorse/Immagini/Utility/Visibility V3/eye.svg" alt="Change Mode" width="20" height="20"></a> 
+            </div>
+
+            <!-- Social -->
+            <div class="socials">
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/"><img src="../Risorse/Immagini/Social/Facebook/facebook.svg" alt="Facebook" width="20" height="20"></a>
+                
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/"><img src="../Risorse/Immagini/Social/Instagram/instagram.svg" alt="Instagram" width="20" height="20"></a>
+                
+                <!-- Twitter -->
+                <a href="https://x.com/?lang=it"><img src="../Risorse/Immagini/Social/Twitter/X.svg" alt="Twitter" width="20" height="20"></a>
+                
+                <!-- Telegram -->
+                <!-- <a href="https://t.me/IndiePlaygroundNews"><img src="../Risorse/Immagini/Social/Telegram/" alt="Telegram" width="20" height="20"></a> -->
+                
+                <!-- Whatsapp -->
+                <a href=""><img src="../Risorse/Immagini/Social/Whatsapp/whatsapp.svg" alt="Whatsapp" width="20" height="20"></a>
+
+                <!-- Discord -->
+                <a href=""><img src="../Risorse/Immagini/Social/Discord/discord.svg" alt="Discord" width="20" height="20"></a>
+                
+                <!-- Linkedin -->
+                <a href="https://www.linkedin.com/in/davide-longo-a17b89292/"><img src="../Risorse/Immagini/Social/Linkedin/linkedin.svg" alt="Linkedin" width="20" height="20"></a>
+            </div>
+        </div>
+
+        <!-- Barra con menù a tendina -->
+        <div class="header">
+            <h1><a href="../Home/Home.html">IndiePlayground</a></h1>
+            <ul class="nav">
+                <li><a href="../Home/Home.html">Home</a></li>
+                <li>
+                    <a href="#">Giochi</a>
+                    <ul class="dropdown">
+                        <li><a href="Giochi-pubb.html">I vostri giochi</a></li>
+                        <li><a href="Giochi-all.html">Tutti gli Indie</a></li>
+                        <li><a href="Giochi-latest.html">Ultime uscite</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Offerte/Offerte.html">Offerte</a></li>
+                <li>
+                    <a href="#">Guide</a>
+                    <ul class="dropdown">
+                        <li><a href="../Guide/Guide-tutorial.html">Guide videogiochi</a></li>
+                        <li><a href="../Guide/Guide-creation.html">Guide alla creazione</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Forum</a>
+                    <ul class="dropdown">
+                        <li><a href="../Forum/Forum-general.html">Generale</a></li>
+                        <li><a href="../Forum/Forum-thematic.html">Tematico</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Assistenza/Assistenza.html">Assistenza</a></li>
+                <li>
+                    <a href="#">Profilo</a>
+                    <ul class="dropdown">
+                        <li><a href="../Profilo/Profilo-login.html">Accedi</a></li>
+                        <li><a href="../Profilo/Profilo-register.html">Registrati</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
         
-        <form method="get" name="filtraggio" align="center">
-            <label>Filtra per:</label>
-            <!-- Selezione anno di uscita -->
-            <select name="anno">
-                <option selected="selected" value="Anno">Anno</option>
-                <option value="2024">2024</option>
-                <option value="2023">2023</option>
-                <option value="2022">2022</option>
-                <option value="2021">2021</option>
-                <option value="2020">2020</option>
-                <option value="2019">2019</option>
-                <option value="2018">2018</option>
-                <option value="2017">2017</option>
-            </select>
+        <div class="giochi-all">
+            <div class="pagina-generale">
+                <h1 id="iniziogiochi">Tutti i giochi indie</h1>
+                <h2>Scopri tutti i giochi indie più famosi!</h2>
+            
+                <!-- Filtraggio -->
+                <form method="get" name="filtraggio" align="center">
+                    <label>(ancora da implementare) Filtra per:</label>
 
-            <!-- Selezione genere -->
-            <select name="genere">
-                <option selected="selected" value="Genere">Genere</option>
-                <option value="indie">Indie</option>
-                <option value="indie-horror">Indie-Horror</option>
-            </select>
+                    <!-- Selezione anno di uscita -->
+                    <select name="anno">
+                        <option selected="selected" value="Anno">Anno</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                    </select>
 
-            <!-- Selezione prezzo -->
-            <select name="prezzo">
-                <option selected="selected" value="Prezzo">Prezzo</option>
-                <option value="100-150">100-150</option>
-                <option value="65-100">65-100</option>
-                <option value="60-65">60-65</option>
-                <option value="55-60">55-60</option>
-                <option value="50-55">50-55</option>
-                <option value="45-50">45-50</option>
-                <option value="40-45">40-45</option>
-                <option value="35-40">35-40</option>
-                <option value="30-35">30-35</option>
-                <option value="25-30">25-30</option>
-                <option value="20-25">20-25</option>
-                <option value="15-20">15-20</option>
-                <option value="10-15">10-15</option>
-                <option value="5-10">5-10</option>
-                <option value="1-5">1-5</option>
-                <option value="0-1">0-1</option>
-                <option value="0">0</option>
-            </select>
+                    <!-- Selezione genere -->
+                    <select name="genere">
+                        <option selected="selected" value="Genere">Genere</option>
+                        <option value="indie">Indie</option>
+                        <option value="indie-horror">Indie-Horror</option>
+                    </select>
 
-            <!-- Ricerca personalizzata -->
-            <input name="ricerca" type="text" placeholder="Ricerca 🔍">
-        </form>
+                    <!-- Selezione prezzo -->
+                    <select name="prezzo">
+                        <option selected="selected" value="Prezzo">Prezzo</option>
+                        <option value="100-150">100-150</option>
+                        <option value="65-100">65-100</option>
+                        <option value="60-65">60-65</option>
+                        <option value="55-60">55-60</option>
+                        <option value="50-55">50-55</option>
+                        <option value="45-50">45-50</option>
+                        <option value="40-45">40-45</option>
+                        <option value="35-40">35-40</option>
+                        <option value="30-35">30-35</option>
+                        <option value="25-30">25-30</option>
+                        <option value="20-25">20-25</option>
+                        <option value="15-20">15-20</option>
+                        <option value="10-15">10-15</option>
+                        <option value="5-10">5-10</option>
+                        <option value="1-5">1-5</option>
+                        <option value="0-1">0-1</option>
+                        <option value="0">0</option>
+                    </select>
+                        
+                    <!-- Ricerca personalizzata -->
+                    <input name="ricerca" type="text" placeholder="Ricerca 🔍">
+                </form>
+            
+                <!-- Reindirizzamento all'iniziale dei videogiochi creati dai piccoli programmatori -->
+                <div class="letters-redirection">
+                    <p>
+                        <a href="#giochiA">A</a> ▫
+                        <a href="#giochiB">B</a> ▫
+                        <a href="#giochiC">C</a> ▫
+                        <a href="#giochiD">D</a> ▫
+                        <a href="#giochIE">E</a> ▫
+                        <a href="#giochiF">F</a> ▫
+                        <a href="#giochiG">G</a> ▫
+                        <a href="#giochiH">H</a> ▫
+                        <a href="#giochiI">I</a> ▫
+                        <a href="#giochiJ">J</a> ▫
+                        <a href="#giochiK">K</a> ▫
+                        <a href="#giochiL">L</a> ▫
+                        <a href="#giochiM">M</a> ▫
+                        <a href="#giochiN">N</a> ▫
+                        <a href="#giochiO">O</a> ▫
+                        <a href="#giochiP">P</a> ▫
+                        <a href="#giochiQ">Q</a> ▫
+                        <a href="#giochiR">R</a> ▫
+                        <a href="#giochiS">S</a> ▫
+                        <a href="#giochiT">T</a> ▫
+                        <a href="#giochiU">U</a> ▫
+                        <a href="#giochiV">V</a> ▫
+                        <a href="#giochiW">W</a> ▫
+                        <a href="#giochiX">X</a> ▫
+                        <a href="#giochiY">Y</a> ▫
+                        <a href="#giochiZ">Z</a>
+                    </p>
+                </div>
 
-        <!-- Reindirizzamento all'iniziale dei videogiochi creati dai piccoli programmatori -->
-        <h3>
-            <a href="#giochiA">A</a> ▫
-            <a href="#giochiB">B</a> ▫
-            <a href="#giochiC">C</a> ▫
-            <a href="#giochiD">D</a> ▫
-            <a href="#giochIE">E</a> ▫
-            <a href="#giochiF">F</a> ▫
-            <a href="#giochiG">G</a> ▫
-            <a href="#giochiH">H</a> ▫
-            <a href="#giochiI">I</a> ▫
-            <a href="#giochiJ">J</a> ▫
-            <a href="#giochiK">K</a> ▫
-            <a href="#giochiL">L</a> ▫
-            <a href="#giochiM">M</a> ▫
-            <a href="#giochiN">N</a> ▫
-            <a href="#giochiO">O</a> ▫
-            <a href="#giochiP">P</a> ▫
-            <a href="#giochiQ">Q</a> ▫
-            <a href="#giochiR">R</a> ▫
-            <a href="#giochiS">S</a> ▫
-            <a href="#giochiT">T</a> ▫
-            <a href="#giochiU">U</a> ▫
-            <a href="#giochiV">V</a> ▫
-            <a href="#giochiW">W</a> ▫
-            <a href="#giochiX">X</a> ▫
-            <a href="#giochiY">Y</a> ▫
-            <a href="#giochiZ">Z</a>
-        </h3>
+                <!-- Sezione giochi con la A -->    
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiA">A</div>
 
-        <!-- Sezione giochi con la A -->
-        <br>
-        <h3 id="giochiA">A</h3>
+                </div>
 
-        <!-- Sezione giochi con la B -->
-        <br>
-        <h3 id="giochiB">B</h3>
+                <!-- Sezione giochi con la B -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiB">B</div>
 
-        <!-- Sezione giochi con la C -->
-        <br>
-        <h3 id="giochiC">C</h3>
-        
-        <!-- Sezione giochi con la D -->
-        <br>
-        <h3 id="giochiD">D</h3>
-        
-        <!-- Sezione giochi con la E -->
-        <br>
-        <h3 id="giochiE">E</h3>
+                </div>
 
-        <!-- SeziOne giochi con la F -->
-        <br>
-        <h3 id="giochiF">F</h3>
+                <!-- Sezione giochi con la C -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiC">C</div>
 
-        <!-- Sezione giochi con la G -->
-        <br>
-        <h3 id="giochiG">G</h3>
+                </div>
+                
+                <!-- Sezione giochi con la D -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiD">D</div>
 
-        <!-- Sezione giochi con la H -->
-        <br>
-        <h3 id="giochiH">H</h3>
+                </div>
+                
+                <!-- Sezione giochi con la E -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiE">E</div>
 
-        <!-- Sezione giochi con la I -->
-        <br>
-        <h3 id="giochiI">I</h3>
+                </div>
 
-        <!-- Sezione giochi con la J -->
-        <br>
-        <h3 id="giochiJ">J</h3>
+                <!-- SeziOne giochi con la F -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiF">F</div>
 
-        <!-- Sezione giochi con la K -->
-        <br>
-        <h3 id="giochiK">K</h3>
+                </div>
 
-        <!-- Sezione giochi con la L -->
-        <br>
-        <h3 id="giochiL">L</h3>
+                <!-- Sezione giochi con la G -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiG">G</div>
 
-        <!-- Sezione giochi con la M -->
-        <br>
-        <h3 id="giochiM">M</h3>
+                </div>
 
-        <!-- Sezione giochi con la N -->
-        <br>
-        <h3 id="giochiN">N</h3>
+                <!-- Sezione giochi con la H -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiH">H</div>
 
-        <!-- Sezione giochi con la O -->
-        <br>
-        <h3 id="giochiO">O</h3>
+                </div>
 
-        <!-- Sezione giochi con la P -->
-        <br>
-        <h3 id="giochiP">P</h3>
+                <!-- Sezione giochi con la I -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiI">I</div>
 
-        <!-- Sezione giochi con la Q -->
-        <br>
-        <h3 id="giochiQ">Q</h3>
+                </div>
 
-        <!-- Sezione giochi con la R -->
-        <br>
-        <h3 id="giochiR">R</h3>
+                <!-- Sezione giochi con la J -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiJ">J</div>
 
-        <!-- Sezione giochi con la S -->
-        <br>
-        <h3 id="giochiS">S</h3>
+                </div>
 
-        <!-- Sezione giochi con la T -->
-        <br>
-        <h3 id="giochiT">T</h3>
+                <!-- Sezione giochi con la K -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiK">K</div>
 
-        <!-- Sezione giochi con la U -->
-        <br>
-        <h3 id="giochiU">U</h3>
+                </div>
 
-        <!-- Sezione giochi con la V -->
-        <br>
-        <h3 id="giochiV">V</h3>
+                <!-- Sezione giochi con la L -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiL">L</div>
 
-        <!-- Sezione giochi con la W -->
-        <br>
-        <h3 id="giochiW">W</h3>
+                </div>
 
-        <!-- Sezione giochi con la X -->
-        <br>
-        <h3 id="giochiX">X</h3>
+                <!-- Sezione giochi con la M -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiM">M</div>
 
-        <!-- Sezione giochi con la Y -->
-        <br>
-        <h3 id="giochiY">Y</h3>
+                </div>
 
-        <!-- Sezione giochi con la Z -->
-        <br>
-        <h3 id="giochiZ">Z</h3>
+                <!-- Sezione giochi con la N -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiN">N</div>
 
+                </div>
 
+                <!-- Sezione giochi con la O -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiO">O</div>
 
-        <!-- Reindirizzamento all'iniziale dei videogiochi dei piccoli programmatori -->
-        <br>
-        <h3>
-            <a href="#giochiA">A</a> ▫
-            <a href="#giochiB">B</a> ▫
-            <a href="#giochiC">C</a> ▫
-            <a href="#giochiD">D</a> ▫
-            <a href="#giochIE">E</a> ▫
-            <a href="#giochiF">F</a> ▫
-            <a href="#giochiG">G</a> ▫
-            <a href="#giochiH">H</a> ▫
-            <a href="#giochiI">I</a> ▫
-            <a href="#giochiJ">J</a> ▫
-            <a href="#giochiK">K</a> ▫
-            <a href="#giochiL">L</a> ▫
-            <a href="#giochiM">M</a> ▫
-            <a href="#giochiN">N</a> ▫
-            <a href="#giochiO">O</a> ▫
-            <a href="#giochiP">P</a> ▫
-            <a href="#giochiQ">Q</a> ▫
-            <a href="#giochiR">R</a> ▫
-            <a href="#giochiS">S</a> ▫
-            <a href="#giochiT">T</a> ▫
-            <a href="#giochiU">U</a> ▫
-            <a href="#giochiV">V</a> ▫
-            <a href="#giochiW">W</a> ▫
-            <a href="#giochiX">X</a> ▫
-            <a href="#giochiY">Y</a> ▫
-            <a href="#giochiZ">Z</a>
-        </h3>
+                </div>
 
-        <!-- Torna all'inizio -->
-        <h3><a href="#iniziogiochi">Torna all'inizio</a></h3>
-        <br>
-        
+                <!-- Sezione giochi con la P -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiP">P</div>
 
-        <!-- Socials -->
+                </div>
 
-         <!-- Linkedin -->
-         <a href="https://www.linkedin.com/in/davide-longo-a17b89292/"><img src="../Immagini/Social/linkedin.png" alt="Linkedin" widht="30" height="30"></a>
-         
-         <!-- Instagram -->
-         <a href="https://www.instagram.com/"><img src="../Immagini/Social/instagram.png" alt="Instagram" width="30" height="30"></a>
-        
-         <!-- Telegram -->
-         <a href="https://web.telegram.org"><img src="../Immagini/Social/telegram.png" alt="Telegram" widht="30" height="30"></a>
-         
-         <!-- Facebook -->
-         <a href="https://facebook.com"><img src="../Immagini/Social/facebook.png" alt="Facebook" widht="30" height="30"></a>
+                <!-- Sezione giochi con la Q -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiQ">Q</div>
+
+                </div>
+
+                <!-- Sezione giochi con la R -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiR">R</div>
+
+                </div>
+
+                <!-- Sezione giochi con la S -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiS">S</div>
+
+                </div>
+
+                <!-- Sezione giochi con la T -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiT">T</div>
+
+                </div>
+
+                <!-- Sezione giochi con la U -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiU">U</div>
+
+                </div>
+
+                <!-- Sezione giochi con la V -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiV">V</div>
+
+                </div>
+
+                <!-- Sezione giochi con la W -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiW">W</div>
+
+                </div>
+
+                <!-- Sezione giochi con la X -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiX">X</div>
+
+                </div>
+
+                <!-- Sezione giochi con la Y -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiY">Y</div>
+
+                </div>
+
+                <!-- Sezione giochi con la Z -->
+                <br>
+                <div class="letter-box">
+                    <div class="letter-content" id="giochiZ">Z</div>
+
+                </div>
+
+                <!-- Reindirizzamento all'iniziale dei videogiochi dei piccoli programmatori -->
+                <br>
+                <div class="letters-redirection">
+                    <p>
+                        <a href="#giochiA">A</a> ▫
+                        <a href="#giochiB">B</a> ▫
+                        <a href="#giochiC">C</a> ▫
+                        <a href="#giochiD">D</a> ▫
+                        <a href="#giochIE">E</a> ▫
+                        <a href="#giochiF">F</a> ▫
+                        <a href="#giochiG">G</a> ▫
+                        <a href="#giochiH">H</a> ▫
+                        <a href="#giochiI">I</a> ▫
+                        <a href="#giochiJ">J</a> ▫
+                        <a href="#giochiK">K</a> ▫
+                        <a href="#giochiL">L</a> ▫
+                        <a href="#giochiM">M</a> ▫
+                        <a href="#giochiN">N</a> ▫
+                        <a href="#giochiO">O</a> ▫
+                        <a href="#giochiP">P</a> ▫
+                        <a href="#giochiQ">Q</a> ▫
+                        <a href="#giochiR">R</a> ▫
+                        <a href="#giochiS">S</a> ▫
+                        <a href="#giochiT">T</a> ▫
+                        <a href="#giochiU">U</a> ▫
+                        <a href="#giochiV">V</a> ▫
+                        <a href="#giochiW">W</a> ▫
+                        <a href="#giochiX">X</a> ▫
+                        <a href="#giochiY">Y</a> ▫
+                        <a href="#giochiZ">Z</a>
+                    </p>
+
+                    <!-- Torna all'inizio -->
+                    <p><a href="#iniziogiochi">Torna all'inizio</a></p>
+                </div>
+                <br>
+            </div>
+            
+            <!-- Barra laterale -->
+            <div class="barra-laterale">
+                <p></p>
+            </div>           
+        </div>
 
         <!-- End credits -->
-         
-         <!-- Privacy Policy - Term of Use -->
-         <br><font size="1"><a href="../Assistenza/Privacy-Policy.html">Privacy Policy</a> | <a href="../Assistenza/Term-of-use.html">Term of use</a>
-        
-         <!-- Contacts -->
-         <br>Contattaci: <a href="mailto:example@example.com">example@example.com</a> | Num: <a href="tel:+393714570552">371 457 0552</a>
-        
-         <!-- Location -->
-         <br><a href="https://maps.app.goo.gl/EC1pkaRgHUACVeds9">Viale San Lorenzo 2</a> | <a href="https://maps.app.goo.gl/7hoe2AH7xXwrUAWu5">Benevento 82100</a> | <a href="https://maps.app.goo.gl/mpJ3f1zbN8qWVzcYA">Italia</a>
-        
-         <!-- Copyright -->
-         <br>© 2024 IndiePlayground | Vivariumware</font>
+        <div class="end-credits">
+            <!-- Privacy Policy - Term of Use -->
+            <font size="1"><a href="../Assistenza/Privacy-Policy.html">Privacy Policy</a> | <a href="../Assistenza/Term-of-use.html">Term of use</a>
+           
+            <!-- Location -->
+            <br><a href="https://maps.app.goo.gl/EC1pkaRgHUACVeds9">Viale San Lorenzo 2</a> | <a href="https://maps.app.goo.gl/7hoe2AH7xXwrUAWu5">Benevento 82100</a> | <a href="https://maps.app.goo.gl/mpJ3f1zbN8qWVzcYA">Italia</a>
+           
+            <!-- Copyright -->
+            <br>© 2024 IndiePlayground | Vivariumware</font>
+        </div>
     </body>
 </html>
