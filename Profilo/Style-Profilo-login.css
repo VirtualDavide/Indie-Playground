@@ -1,0 +1,109 @@
+/* Definizione dei font personalizzati */
+@font-face {
+    font-family: 'Trends';
+    src: url('../Risorse/Font/trends/Trends.ttf') format('truetype'); /* Font per browser moderni */
+    font-weight: normal; /* Peso normale del font */
+    font-style: normal; /* Stile normale del font */
+}
+
+@font-face {
+    font-family: 'Heavitas';
+    src: url('../Risorse/Font/heavitas/Heavitas.ttf') format('truetype'); /* Font per browser moderni */
+    font-weight: normal; /* Peso normale del font */
+    font-style: normal; /* Stile normale del font */
+}
+
+/* Stili generali */
+body {
+    font-family: 'Arial', sans-serif; /* Font generale */
+    margin: 0; /* Rimuove margini predefiniti */
+    padding: 0; /* Rimuove padding predefiniti */
+    background-color: #f4f4f4; /* Colore di sfondo della pagina */
+    color: #333; /* Colore del testo */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.login {
+    border-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Larghezza massima per il modulo */
+    text-align: center;
+    margin: 140px auto 0 auto; /* Centra orizzontalmente e aggiunge margine sopra */
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* Input */
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="submit"], input[type="reset"] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Link aggiuntivi sotto il form */
+.others {
+    margin-top: 0; /* Rimuove margine superiore */
+    margin-bottom: 165px;
+    padding-top: 10px; /* Dà un po' di spazio sopra ai link */
+    text-align: center; /* Centra i link */
+}
+
+.others p {
+    margin: 10px; /* Rimuove margine tra i paragrafi */
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.others a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.others a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

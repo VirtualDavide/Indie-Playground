@@ -25,9 +25,27 @@ body {
     flex-direction: column;
 }
 
-h1, h2, h4 {
+h1 {
     text-align: center; /* Allinea i titoli al centro */
     color: #2c3e50; /* Colore dei titoli */
+}
+
+h2 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+
+h4 {
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: 'Arial', sans-serif; 
 }
 
 /* Stile per il contenitore delle notizie */
