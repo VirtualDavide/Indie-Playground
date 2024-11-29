@@ -43,9 +43,9 @@ form {
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 350px; /* Larghezza massima per il modulo */
+    max-width: 400px; /* Larghezza massima per il modulo */
     text-align: center;
-    margin: 10px auto 0 auto; /* Centra orizzontalmente e aggiunge margine sopra */
+    margin: 140px auto 0 auto; /* Centra orizzontalmente e aggiunge margine sopra */
 }
 
 fieldset {
@@ -64,21 +64,6 @@ legend {
     width: 100%;
 }
 
-/* Stilizzazione delle etichette */
-label {
-    font-size: 1rem;            /* Imposta la dimensione del font */
-    font-weight: bold;          /* Rende il testo in grassetto */
-    color: #333;                /* Colore del testo */
-    margin-bottom: 5px;         /* Distanza sotto l'etichetta */
-    display: block;             /* Rende l'etichetta un blocco (occorre per allineare l'input su una nuova riga) */
-    text-align: left;           /* Allinea il testo a sinistra */
-}
-
-/* Stilizzazione delle etichette in focus (se vuoi cambiare lo stile quando l'etichetta è in focus) */
-label:focus-within {
-    color: #007bff;             /* Colore blu quando l'etichetta è in focus */
-    font-weight: normal;        /* Cambia il peso del font in focus */
-}
 
 /* Input */
 input[type="text"], input[type="email"], input[type="password"] {
@@ -90,7 +75,6 @@ input[type="text"], input[type="email"], input[type="password"] {
     font-size: 1rem;
 }
 
-
 input[type="submit"], input[type="reset"] {
     padding: 10px 20px;
     font-size: 1rem;
@@ -99,7 +83,6 @@ input[type="submit"], input[type="reset"] {
     border-radius: 5px;
     cursor: pointer;
 }
-
 
 /* Link aggiuntivi sotto il form */
 .others {
@@ -113,6 +96,7 @@ input[type="submit"], input[type="reset"] {
     margin: 10px; /* Rimuove margine tra i paragrafi */
     font-size: 0.9rem;
     color: #555;
+    font-weight: bold;
 }
 
 .others a {
@@ -123,4 +107,8 @@ input[type="submit"], input[type="reset"] {
 .others a:hover {
     color: #0056b3;
     text-decoration: underline;
+}
+
+* {
+    box-sizing: border-box;
 }

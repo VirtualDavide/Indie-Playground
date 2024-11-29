@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>IndiePlayground | Accesso</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Style-Profilo-login.css">
+
+        <!-- Link ai file css della pagina -->
+        <link rel="stylesheet" href="../Risorse/Codes/CSSGENERALI/TOPBARMENU.css"> <!-- Codice css del menù a tendina -->
+        <link rel="stylesheet" href="../Risorse/Codes/CSSGENERALI/CREDITIFINALI.css"> <!-- Codice css dei crediti finali -->
+    </head>
+    <body>
+        <!-- Barra superiore con contatti e social -->
+        <div class="top-bar">
+            <!-- Contatti -->
+            <div class="contacts">
+                <!-- Email -->
+                <a href="mailto:indieplaygroundgames@gmail.com" img><img src="../Risorse/Immagini/Utility/Mail/mail.svg" alt="Email: immettere" width="20" height="20"></a>
+                <!-- Telefono -->
+                <a href="tel:+393714570552"><img src="../Risorse/Immagini/Utility/phone.svg" alt="Telefono: + 39371 457 0552" width="20" height="20"></a>
+            
+                <!-- Dark/Light Mode -->
+                <a href="Home-Dark.html"><img src="../Risorse/Immagini/Utility/Visibility V3/eye.svg" alt="Change Mode" width="20" height="20"></a> 
+            </div>
+
+            <!-- Social -->
+            <div class="socials">
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/groups/1130492455155290/"><img src="../Risorse/Immagini/Social/Facebook/facebook.svg" alt="Facebook" width="20" height="20"></a>
+                
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/"><img src="../Risorse/Immagini/Social/Instagram/instagram.svg" alt="Instagram" width="20" height="20"></a>
+                
+                <!-- Twitter -->
+                <a href="https://x.com/IndiePNews"><img src="../Risorse/Immagini/Social/Twitter/X.svg" alt="Twitter" width="20" height="20"></a>
+                
+                <!-- Telegram -->
+                <!-- <a href="https://t.me/IndiePlaygroundNews"><img src="../Risorse/Immagini/Social/Telegram/" alt="Telegram" width="20" height="20"></a> -->
+                
+                <!-- Whatsapp -->
+                <a href="https://whatsapp.com/channel/0029VayOxOA2Jl8BNfSNe91g"><img src="../Risorse/Immagini/Social/Whatsapp/whatsapp.svg" alt="Whatsapp" width="20" height="20"></a>
+
+                <!-- Discord -->
+                <a href=""><img src="../Risorse/Immagini/Social/Discord/discord.svg" alt="Discord" width="20" height="20"></a>
+                
+                <!-- Linkedin -->
+                <a href="https://www.linkedin.com/in/davide-longo-a17b89292/"><img src="../Risorse/Immagini/Social/Linkedin/linkedin.svg" alt="Linkedin" width="20" height="20"></a>
+            </div>
+        </div>
+
+        <!-- Barra con menù a tendina -->
+        <div class="header">
+            <h1><a href="../index.html">IndiePlayground</a></h1>
+            <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <a href="#">Giochi</a>
+                    <ul class="dropdown">
+                        <li><a href="../Giochi/Giochi-pubb.html">I vostri giochi</a></li>
+                        <li><a href="../Giochi/Giochi-all.html">Tutti gli Indie</a></li>
+                        <li><a href="../Giochi/Giochi-latest.html">Ultime uscite</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Offerte/Offerte.html">Offerte</a></li>
+                <li>
+                    <a href="#">Guide</a>
+                    <ul class="dropdown">
+                        <li><a href="../Guide/Guide-tutorial.html">Guide videogiochi</a></li>
+                        <li><a href="../Guide/Guide-creation.html">Guide alla creazione</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Forum</a>
+                    <ul class="dropdown">
+                        <li><a href="../Forum/Forum-general.html">Generale</a></li>
+                        <li><a href="../Forum/Forum-thematic.html">Tematico</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Assistenza/Assistenza.html">Assistenza</a></li>
+                <li>
+                    <a href="#">Profilo</a>
+                    <ul class="dropdown">
+                        <li><a href="Profilo-login.html">Accedi</a></li>
+                        <li><a href="Profilo-register.html">Registrati</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="login">
+            <form method="get" action="accesso.php" name="accesso">
+                <fieldset>
+                    <!-- Titolo -->
+                    <legend>Accesso utente</legend>
+                    
+                    <!-- Inserimento del nickname -->
+                    <input name="nickname" type="text" placeholder="Nickname" size="22" minlength="5" maxlength="15" required><br><br>
+                    
+                    <!-- Inserimento dell'email -->
+                    <input name="email" type="email" placeholder="E-mail" size="22" required><br><br>
+                    
+                    <!-- Inserimento della password -->
+                    <input name="password" type="password" placeholder="Password" size="22" minlength="8" maxlength="16" required><br><br>
+
+                    <!-- Tasti invio e Annulla -->
+                    <input value="Invia" name="invia" type="submit"> <input value="Annulla" name="annulla" type="reset">
+                </fieldset>    
+            </form>
+        </div>
+
+        <!-- Soluzioni accesso errato -->
+        <div class="others">
+            <p><a href="../Assistenza/Change-Password.html">Password dimenticata?</a></p>
+            <p>Non hai un account? <a href="Profilo-register.html">Registrati!</a></p>
+        </div>
+
+        <!-- End credits -->
+        <div class="end-credits">
+            <!-- Privacy Policy - Term of Use -->
+            <font size="1"><a href="../Assistenza/Privacy-Policy.html">Privacy Policy</a> | <a href="../Assistenza/Term-of-use.html">Term of use</a>
+            
+            <!-- Location -->
+            <br><a href="https://maps.app.goo.gl/EC1pkaRgHUACVeds9">Viale San Lorenzo 2</a> | <a href="https://maps.app.goo.gl/7hoe2AH7xXwrUAWu5">Benevento 82100</a> | <a href="https://maps.app.goo.gl/mpJ3f1zbN8qWVzcYA">Italia</a>
+            
+            <!-- Copyright -->
+            <br>© 2024 IndiePlayground | Vivariumware</font>
+        </div>
+    </body>
+</html>
