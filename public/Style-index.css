@@ -1,18 +1,3 @@
-/* Definizione dei font personalizzati */
-@font-face {
-    font-family: 'Trends';
-    src: url('../Risorse/Font/trends/Trends.ttf') format('truetype'); /* Font per browser moderni */
-    font-weight: normal; /* Peso normale del font */
-    font-style: normal; /* Stile normale del font */
-}
-
-@font-face {
-    font-family: 'Heavitas';
-    src: url('../Risorse/Font/heavitas/Heavitas.ttf') format('truetype'); /* Font per browser moderni */
-    font-weight: normal; /* Peso normale del font */
-    font-style: normal; /* Stile normale del font */
-}
-
 /* Stili generali */
 body {
     font-family: 'Arial', sans-serif; /* Font generale */

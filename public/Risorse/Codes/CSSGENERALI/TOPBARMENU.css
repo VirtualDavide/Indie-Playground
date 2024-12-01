@@ -1,3 +1,18 @@
+/* Definizione dei font personalizzati */
+@font-face {
+    font-family: 'Trends';
+    src: url('../../Font/trends/Trends.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Heavitas';
+    src: url('../../Font/heavitas/Heavitas.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Stile per la barra superiore */
 .top-bar {
     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); /* Gradiente di sfondo */

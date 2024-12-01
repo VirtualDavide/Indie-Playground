@@ -1,0 +1,54 @@
+/* Stili generali */
+body {
+    font-family: 'Arial', sans-serif; /* Font generale */
+    margin: 0; /* Rimuove margini predefiniti */
+    padding: 0; /* Rimuove padding predefiniti */
+    background-color: #f4f4f4; /* Colore di sfondo della pagina */
+    color: #333; /* Colore del testo */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h4 {
+    text-align: center; /* Allinea i titoli al centro */
+    color: #2c3e50; /* Colore dei titoli */
+}
+
+/* Stile per il contenitore delle notizie */
+.guide-tutorial {
+    display: flex; /* Usa flexbox per la disposizione */
+    justify-content: space-between; /* Spazia gli elementi tra di loro */
+    margin: 20px; /* Margine attorno al contenitore */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); /* Ombra dietro il contenitore */
+    border-radius: 10px; /* Angoli arrotondati */
+}
+
+.pagina-generale {
+    flex: 5;
+    margin-right: 20px;
+}
+
+/* Stile per i titoli centrati */
+.pagina-generale h1,
+.pagina-generale h2 {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+
+.pagina-generale h1 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+.pagina-generale h2 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}

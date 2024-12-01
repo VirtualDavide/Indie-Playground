@@ -12,22 +12,6 @@ h1, h2, h4 {
     color: #2c3e50;
 }
 
-/* Definizione dei font personalizzati */
-@font-face {
-    font-family: 'Trends';
-    src: url('../Risorse/Font/trends/Trends.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Heavitas';
-    src: url('../Risorse/Font/heavitas/Heavitas.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
 .giochi-latest {
     display: flex;
     justify-content: space-between;
