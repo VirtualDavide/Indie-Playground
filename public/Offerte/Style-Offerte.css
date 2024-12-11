@@ -94,7 +94,7 @@ h1, h2, h4 {
 
 .letter-box {
     display: inline-block;
-    width: 1525px;
+    width: 1065px;
     height: 100px;
     background-color: #e6e6e6;
     color: #2c3e50;
@@ -112,7 +112,7 @@ h1, h2, h4 {
     position: absolute;
     top: 5px; /* Posiziona in alto */
     left: 10px; /* Posiziona a sinistra */
-    width: 1500px;
+    width: 1045px;
     height: 30px;
     background-color: #c5c5c5; /* Sfondo più scuro per distinguere */
     color: black;

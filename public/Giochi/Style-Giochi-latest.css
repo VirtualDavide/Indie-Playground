@@ -73,7 +73,7 @@ h1, h2, h4 {
 
 .news-title {
     position: relative;  /* Corretto il posizionamento */
-    width: 1500px;
+    width: 1030px;
     height: 40px;
     background-color: #c5c5c5;  /* Sfondo più scuro per distinguere */
     color: black;

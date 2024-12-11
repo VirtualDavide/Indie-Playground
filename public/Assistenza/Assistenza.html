@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="../Risorse/Codes/CSSGENERALI/TOPBARMENU.css"> <!-- Codice css del menù a tendina -->
         <link rel="stylesheet" href="../Risorse/Codes/CSSGENERALI/CREDITIFINALI.css"> <!-- Codice css dei crediti finali -->
         <link rel="stylesheet" href="../Risorse/Codes/CSSGENERALI/CAROSELLOIMMAGINI.css"> <!-- Codice css del carosello immagini -->
+        <link rel="stylesheet" href="../Risorse/Codes/CSSGENERALI/GOBACKUP.css"> <!-- Codice css della frecia go up -->
     </head>
     <body>
         <!-- Barra superiore con contatti e social -->
@@ -92,7 +93,147 @@
             <div class="pagina-generale">
                 <h1>Assistenza</h1>
                 <h2>Hai bisogno d'aiuto? Qui potrai contattare l'assistenza tramite email, chat etc.</h2>
+                
+                <h3>Domane frequenti</h3>
+                
+                <div class="helpcontainer">
+                    <div class="helpbox">
+                        <h3>Domanda N°1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius nec turpis quis sollicitudin. Fusce rhoncus pretium ante vel porttitor.</p>
+                    </div>
+
+                    <div class="helpbox">
+                        <h3>Domanda N°2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius nec turpis quis sollicitudin. Fusce rhoncus pretium ante vel porttitor.</p>
+                    </div>
+                    
+                    <div class="helpbox">
+                        <h3>Domanda N°3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius nec turpis quis sollicitudin. Fusce rhoncus pretium ante vel porttitor.</p>
+                    </div>
+
+                    <div class="helpbox">
+                        <h3>Domanda N°4</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius nec turpis quis sollicitudin. Fusce rhoncus pretium ante vel porttitor.</p>
+                    </div>
+
+                    <div class="helpbox">
+                        <h3>Domanda N°5</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius nec turpis quis sollicitudin. Fusce rhoncus pretium ante vel porttitor.</p>
+                    </div>
+
+                    <div class="helpbox">
+                        <h3>Domanda N°6</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius nec turpis quis sollicitudin. Fusce rhoncus pretium ante vel porttitor.</p>
+                    </div>
+                    
+                    <div class="helpbox">
+                        <h3>Domanda N°7</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius nec turpis quis sollicitudin. Fusce rhoncus pretium ante vel porttitor.</p>
+                    </div>
+
+                    <div class="helpbox">
+                        <h3>Domanda N°8</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius nec turpis quis sollicitudin. Fusce rhoncus pretium ante vel porttitor.</p>
+                    </div>
+
+                    <div class="helpbox">
+                        <h3>Domanda N°9</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius nec turpis quis sollicitudin. Fusce rhoncus pretium ante vel porttitor.</p>
+                    </div>
+
+                    <div class="helpbox">
+                        <h3>Domanda N°10</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius nec turpis quis sollicitudin. Fusce rhoncus pretium ante vel porttitor.</p>
+                    </div>
+
+                    <div class="helpbox">
+                        <h3>Domanda N°11</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius nec turpis quis sollicitudin. Fusce rhoncus pretium ante vel porttitor.</p>
+                    </div>
+                    
+                    <div class="helpbox">
+                        <h3>Domanda N°12</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius nec turpis quis sollicitudin. Fusce rhoncus pretium ante vel porttitor.</p>
+                    </div>
+                </div>
+                
+                
+                <h3>Hai bisogno di altro? Contattaci!</h3>
+                <div class="sendmail">
+                    <form action="sendmail.php" method="post">
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="messaggio">Messaggio:</label>
+                            <textarea id="messaggio" name="messaggio" required></textarea>
+                        </div>
+                        <button type="submit">Invia</button>
+                    </form>
+                </div>
+
+                <div class="chat-container">
+                    <h4>Chat dal vivo</h4>
+                    <div class="chat-box" id="chatBox">
+                      <!-- I messaggi saranno aggiunti qui -->
+                    </div>
+                    <div class="input-container">
+                      <input type="text" id="messageInput" placeholder="Scrivi un messaggio..." />
+                      <button onclick="sendMessage()">Invia</button>
+                    </div>
+                  </div>
+                
+                  <script>
+                    const chatBox = document.getElementById('chatBox');
+                    const messageInput = document.getElementById('messageInput');
+                
+                    // Funzione per inviare un messaggio
+                    function sendMessage() {
+                      const message = messageInput.value.trim();
+                      if (message !== "") {
+                        // Aggiungi il messaggio dell'utente alla chat
+                        addMessage(message, 'user');
+                        
+                        // Svuota il campo di input
+                        messageInput.value = "";
+                
+                        // Risposta automatica del bot
+                        setTimeout(() => {
+                          const botMessage = "Risposta automatica: " + message;
+                          addMessage(botMessage, 'bot');
+                        }, 1000);  // Risposta dopo 1 secondo
+                      }
+                    }
+                
+                    // Funzione per aggiungere un messaggio alla chat
+                    function addMessage(message, sender) {
+                      const messageElement = document.createElement('p');
+                      messageElement.textContent = message;
+                      messageElement.classList.add(sender);  // Aggiungi la classe (user o bot)
+                      chatBox.appendChild(messageElement);
+                      
+                      // Scrolla verso il basso per visualizzare l'ultimo messaggio
+                      chatBox.scrollTop = chatBox.scrollHeight;
+                    }
+                
+                    // Aggiungi un ascoltatore per inviare messaggio con il tasto "Invio"
+                    messageInput.addEventListener('keydown', (event) => {
+                      if (event.key === 'Enter') {
+                        sendMessage();
+                      }
+                    });
+                  </script>
             </div>
+            
+            <!-- Torna all'inizio -->
+            <button onclick="topFunction()" id="myBtn" title="Torna all'inizio">◢◣</button>
+            <script src="../Risorse/Codes/JAVASCRIPTGENERALI/GOBACKUP.js"></script>
         </div>
         <!-- End credits -->
         <div class="end-credits">
