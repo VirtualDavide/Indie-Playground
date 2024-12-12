@@ -1,0 +1,96 @@
+/* Stili generali */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h4 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.livelli {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.pagina-generale {
+    flex: 5;
+    margin-right: 20px;
+}
+
+/* Stile per i titoli centrati */
+.pagina-generale h1,
+.pagina-generale h2 {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+
+.pagina-generale h1 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+.pagina-generale h2 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.news-rectangle {
+    background-color: #e6e6e6;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.news-rectangle h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+.news-rectangle h4 {
+    font-size: 14px;
+    color: #555;
+}
+
+.news-title {
+    position: relative;  /* Corretto il posizionamento */
+    width: 1030px;
+    height: 40px;
+    background-color: #c5c5c5;  /* Sfondo più scuro per distinguere */
+    color: black;
+    display: flex;  /* Usa il flexbox per allineare il testo */
+    align-items: center;  /* Centra verticalmente il contenuto */
+    justify-content: left;  /* Centra orizzontalmente il contenuto */
+    border-radius: 5px;
+    font-size: 18px;  /* Riduce la dimensione del testo */
+    font-weight: bold;  /* Rende il testo più marcato */
+    margin-top: 0;
+}
+
+.news-title h3 {
+    margin: 0;  /* Rimuove margini di default su h3 */
+    margin-left: 5px;
+    text-align: center;  /* Assicura che il testo sia centrato */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.immagine img {
+    width: 1000px;
+    display: flex;
+    margin: 0 auto;    /* Centra orizzontalmente l'immagine */
+}
