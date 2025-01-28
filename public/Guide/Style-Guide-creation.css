@@ -52,3 +52,41 @@ h1, h2, h4 {
 * {
     box-sizing: border-box;
 }
+
+/* Griglia dei livelli */
+.griglia-livelli {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.livello {
+    margin-left: 20px;
+    
+    display: block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none; /* Rimuove la sottolineatura del link */
+}
+
+.livello h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.livello p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.livello:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
