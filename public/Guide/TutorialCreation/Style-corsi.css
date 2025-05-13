@@ -12,7 +12,7 @@ h1, h2, h4 {
     color: #2c3e50;
 }
 
-.giochi-latest {
+.livelli {
     display: flex;
     justify-content: space-between;
     margin: 20px;
@@ -23,13 +23,6 @@ h1, h2, h4 {
 .pagina-generale {
     flex: 5;
     margin-right: 20px;
-}
-
-.barra-laterale {
-    flex: 1; /* Occupa 1/3 dello spazio */
-    background-color: #ffffff; /* Colore di sfondo per il riquadro delle ultime notizie */
-    padding: 10px; /* Padding per il contenitore */
-    border-radius: 10px; /* Angoli arrotondati */
 }
 
 /* Stile per i titoli centrati */
@@ -59,30 +52,27 @@ h1, h2, h4 {
     margin-bottom: 20px;
     border-radius: 5px;
     margin-left: 20px;
-    text-align: center;
 }
 
 .news-rectangle h3 {
     color: #333;
     margin-top: 0;
-    font-size: 15px;
 }
 
 .news-rectangle h4 {
-    font-size: 17px;
+    font-size: 14px;
     color: #555;
 }
 
-
 .news-title {
-    position: block; 
-    width: auto;
+    position: relative;  /* Corretto il posizionamento */
+    width: 1030px;
     height: 40px;
     background-color: #c5c5c5;  /* Sfondo più scuro per distinguere */
     color: black;
     display: flex;  /* Usa il flexbox per allineare il testo */
     align-items: center;  /* Centra verticalmente il contenuto */
-    justify-content: center;  /* Centra orizzontalmente il contenuto */
+    justify-content: left;  /* Centra orizzontalmente il contenuto */
     border-radius: 5px;
     font-size: 18px;  /* Riduce la dimensione del testo */
     font-weight: bold;  /* Rende il testo più marcato */
@@ -93,9 +83,14 @@ h1, h2, h4 {
     margin: 0;  /* Rimuove margini di default su h3 */
     margin-left: 5px;
     text-align: center;  /* Assicura che il testo sia centrato */
-    font-size: 20px;  /* Riduce la dimensione del testo */
 }
 
 * {
     box-sizing: border-box;
+}
+
+.immagine img {
+    width: 1000px;
+    display: flex;
+    margin: 0 auto;    /* Centra orizzontalmente l'immagine */
 }

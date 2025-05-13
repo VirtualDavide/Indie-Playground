@@ -44,6 +44,12 @@ h1, h2, h4 {
     font-weight: bold; /* Testo in grassetto */
     font-size: 20px;
     position: relative; /* Necessario per il dropdown */
+    text-align: center;
+
+}
+
+.letters-redirection {
+    text-align: center;
 }
 
 .letters-redirection a::after { 
@@ -92,13 +98,9 @@ h1, h2, h4 {
     margin: 10px 0;
 }
 
-
-
-
-
 .letter-box {
     display: block;
-    width: 1065px;
+    width: auto;
     height: auto;
     background-color: #e6e6e6;
     color: #2c3e50;
@@ -107,14 +109,13 @@ h1, h2, h4 {
     border-radius: 5px;
     margin-left: 17px;
     position: relative;
-    /* align-items: center; non necessario con display: block */
     padding: 10px; /* Aggiungi un padding di 20px su tutti i lati */
 }
 
 .game-entry {
     display: flex;
     align-items: center;
-    width: 1045px;
+    width: auto;
     height: 250px;
     margin-top: 35px;
     background-color: #ffffff7e;
@@ -133,14 +134,67 @@ h1, h2, h4 {
     margin: 0;
     font-size: 16px;
     color: #333;
+    margin-right: 5px;
   }
+
+  .game-entry h3 {
+    margin: 0;
+    display: block;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .game-entry h4 {
+    margin: 0;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .game-entry h5 {
+    margin: 0;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .game-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centra verticalmente nel contenitore */
+    gap: 10px; /* spazio tra h4, p e button */
+  }
+
+  .game-entry button {
+    padding: 10px 20px;
+    background-color: #00c3ff; /* Verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100px;            /* Larghezza fissa */
+    height: 35px;            /* Altezza fissa */
+    font-size: 13px;         /* Grandezza del testo */
+  }
+  
+  .game-entry button:hover {
+    background-color: #00c3ff77;
+    transform: scale(1.05);
+  }
+  
+  .game-entry button:active {
+    transform: scale(0.98);
+  }
+  
 
 
 .letter-content {
-    position: absolute;
+    position: block;
     top: 5px; /* Posiziona in alto */
     left: 10px; /* Posiziona a sinistra */
-    width: 1045px;
+    width: auto;
     height: 30px;
     background-color: #c5c5c5; /* Sfondo più scuro per distinguere */
     color: black;
