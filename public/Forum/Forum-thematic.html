@@ -90,6 +90,25 @@
             <div class="pagina-generale">
                 <h1>Forum Tematico</h1>
                 <h2>Qui troverai i forum personali degli utenti, nei quali si potrà parlare di argomenti specifici scelti da voi!</h2>
+                <div class="forum-container">
+                    <div class="form-section">
+                        <select id="topicSelect">
+                            <option value="programmazione">Forum di Longo Davide | 💻 Programmazione</option>
+                            <option value="musica">Forum di Niccolò Paganini | 🎵 Musica</option>
+                            <option value="film">Forum di Mickey Mouse | 🎬 Film</option>
+                            <option value="sport">Forum di Jannik Sinner | 🏅 Sport</option>
+                            <option value="cucina">Forum di Antonino Cannavacciuolo | 👨‍🍳 Cucina</option>
+                        </select>
+
+                        <input type="text" id="username" placeholder="Il tuo nome" />
+                        <textarea id="message" placeholder="Scrivi un messaggio..."></textarea>
+                        <button onclick="postMessage()">Invia</button>
+                        </div>
+
+                        <div class="messages-section" id="messages"></div>
+                    </div>
+                </div>
+                    <script src="../Risorse/Codes/JAVASCRIPTGENERALI/forumtematico.js"></script>
             </div>
         </div>
         <!-- End credits -->

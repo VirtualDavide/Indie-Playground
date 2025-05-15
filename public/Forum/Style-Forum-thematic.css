@@ -52,3 +52,62 @@ h1, h2, h4 {
 * {
     box-sizing: border-box;
 }
+
+.forum-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#username, #message, #topicSelect {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#message {
+  resize: vertical;
+  min-height: 80px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.messages-section {
+  max-height: 400px;
+  overflow-y: auto;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+
+.message {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.message strong {
+  color: #007bff;
+}
